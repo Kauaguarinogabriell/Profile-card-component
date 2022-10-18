@@ -5,31 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+    background: url(images/bg-pattern-bottom.svg);
+    background-color: hsl(185, 75%, 39%);
+    margin: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  .card{
+    text-align: center;
+    margin-top: 10%;
+    width: 25%;
+    border-radius: 10px;
+    background-color: snow;
+    height: 50%;
+  }
+  .status1, .status2, .status3{ 
+    font-size: 18px;
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    margin-left: 13.5%;
+  }
+  .imgcard{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 50%; 
+  }
+  .name{
+    font-size: 18px;
+    margin-bottom: 15%;
+  }
+  .imgvictor{
+    border-radius: 100%;
+    border:solid 7px white;
+    margin-top: -15%;
+  }
+  .text1{
+    color: hsl(185, 75%, 39%);
+  }
+  .text2{
+    color:hsl(227, 10%, 46%);
+  }
+  .text21, .text22, .text23{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .value1, .value2, .value3{
+    font-weight: 700;
+  }
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <main class="container">
+    <div class="card">
+      <img class="imgcard" src="images/bg-pattern-card.svg" alt="card img">
+      <img class="imgvictor" src="images/image-victor.jpg" alt="image Victor">
+      <div class="name">
+        Victor Crest
+        <span class="text1">26</span>
+        <br><span class="text2">London</span>
+      </div>
+      <hr>
+      <div class="status1">
+        <span class=z>80K</span>
+        <br><span class="text21">Followers</span>
+      </div>
 
-  80K
-  Followers
+      <div class="status2">
+        <span>803K</span>
+        <br><span class="text22">Likes</span>
+      </div>
 
-  803K
-  Likes
-
-  1.4K
-  Photos
+      <div class="status3">
+        <span>1.4K</span>
+        <br><span class="text23">Photos</span>
+      </div>
+    </div>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Kauaguarinogabriell?tab=repositories">Kauã Guarino</a>.
   </div>
 </body>
 </html>
