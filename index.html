@@ -20,42 +20,36 @@
   .container{
     display: flex;
     justify-content: center;
+    margin-top: 125px;
   }
   .card{
-    text-align: center;
-    margin-top: 10%;
-    width: 25%;
-    border-radius: 10px;
     background-color: snow;
-    height: 50%;
-  }
-  .status1, .status2, .status3{ 
-    font-size: 18px;
-    float: left;
-    margin-top: 5%;
-    margin-bottom: 7%;
-    margin-left: 13.5%;
+    width: 320px;
+    height: 350px;
+    border-radius: 10px;
+    text-align: center;
   }
   .imgcard{
-    border-top-left-radius: 10px;
+    width: 320px;
     border-top-right-radius: 10px;
-    width: 100%;
-    height: 50%; 
+    border-top-left-radius: 10px;
   }
-  .name{
-    font-size: 18px;
-    margin-bottom: 15%;
-  }
-  .imgvictor{
+  .imgavatar{
+    width: 85px;
     border-radius: 100%;
-    border:solid 7px white;
-    margin-top: -15%;
+    margin-top: -60px;
+    border: solid 7px white;
+    margin-bottom: 15px;
   }
-  .text1{
-    color: hsl(185, 75%, 39%);
+  .texts{
+    display: flex;
+    }
+  .text1, .text2, .text3{
+    justify-content: space-around;
+    padding: 15px;
   }
-  .text2{
-    color:hsl(227, 10%, 46%);
+  .line{
+    margin-top: 40px;
   }
   .text21, .text22, .text23{
     color: hsl(227, 10%, 46%);
@@ -64,36 +58,58 @@
   }
   .value1, .value2, .value3{
     font-weight: 700;
+    font-size: 18px;
+    line-height: 15px;
+  }
+  .city{
+    color: hsl(227, 10%, 46%);
+    margin-bottom: 15px;
+  }
+  .years{
+    color: hsl(185, 75%, 39%);
+    font-size: 18px;
+    font-weight: 700;
   }
   </style>
 </head>
 <body>
-  <main class="container">
+  <div class="container">
     <div class="card">
-      <img class="imgcard" src="images/bg-pattern-card.svg" alt="card img">
-      <img class="imgvictor" src="images/image-victor.jpg" alt="image Victor">
-      <div class="name">
+      <div class="image">
+        <img class="imgcard" src="images/bg-pattern-card.svg" alt="card image">
+      </div>
+
+      <div>
+        <img class="imgavatar" src="images/image-victor.jpg" alt="Victor img">
+      </div>
+
+      <div>
         Victor Crest
-        <span class="text1">26</span>
-        <br><span class="text2">London</span>
-      </div>
-      <hr>
-      <div class="status1">
-        <span class=z>80K</span>
-        <br><span class="text21">Followers</span>
+        <span class="years">26</span>
+        <span class="city"><br>London</span>
       </div>
 
-      <div class="status2">
-        <span>803K</span>
-        <br><span class="text22">Likes</span>
+      <hr class="line">
+      <div class="texts">
+        <div class="text1">
+          <span class="value1">80K</span>
+          <span class="text21">Followers</span>
+        </div>
+            
+        <div class="text2">
+          <span class="value2">803K</span>
+          <span class="text22">Likes</span>
+        </div>
+
+        <div class="text3">
+          <span class="value3">1.4K</span> 
+          <span class="text23">Photos</span>
+        </div>
+
       </div>
 
-      <div class="status3">
-        <span>1.4K</span>
-        <br><span class="text23">Photos</span>
-      </div>
-    </div>
-  </main>
+    </div><!--card-->
+  </div><!--container-->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Kauaguarinogabriell?tab=repositories">Kauã Guarino</a>.
